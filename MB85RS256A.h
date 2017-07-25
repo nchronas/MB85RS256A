@@ -40,9 +40,10 @@ class FRAM
 {
 protected:
 	DSPI &line;
+	unsigned char CSpin;
 	
 public:
-	FRAM(DSPI &spi);
+	FRAM(DSPI &spi, unsigned char pin);
 	virtual ~FRAM( ) {};
 		
 	void init();
