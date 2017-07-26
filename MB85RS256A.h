@@ -51,8 +51,8 @@ public:
 	void write_Disable();
 	unsigned char read_Status();
 	void write_Status(char val);
-	void read(unsigned int address, char *buffer, unsigned int size);
-	void write(unsigned int address, char *buffer, unsigned int size);
+	void read(unsigned int address, void *Ptr, unsigned int size);
+	void write(unsigned int address, void *Ptr, unsigned int size);
 	void erase_All();
 	
 private:
