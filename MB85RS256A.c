@@ -15,7 +15,7 @@
 #include "MB85RS256A.h"
 
 #include <string.h>
-#include "hal_uart.h"
+#include "hal_functions.h"
 
 // Status register
 #define FRAM_WPEN       0x80
